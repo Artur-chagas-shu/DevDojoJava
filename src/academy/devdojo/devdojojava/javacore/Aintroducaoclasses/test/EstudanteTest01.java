@@ -1,6 +1,6 @@
-package academy.devdojo.devdojojava.javacore.introducaoclasses.test;
+package academy.devdojo.devdojojava.javacore.Aintroducaoclasses.test;
 
-import academy.devdojo.devdojojava.javacore.introducaoclasses.dominio.Estudante;
+import academy.devdojo.devdojojava.javacore.Aintroducaoclasses.dominio.Estudante;
 
 public class EstudanteTest01 {
     static void main(String[] args) {
