@@ -7,5 +7,6 @@ public class ImpressoraEstudante {
         System.out.println(estudante.idade);
         System.out.println(estudante.sexo);
         System.out.println(estudante.nome);
+        estudante.nome = "Gohan";
     }
 }
