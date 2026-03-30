@@ -5,12 +5,11 @@ import academy.devdojo.devdojojava.javacore.Bintroducaometodos.dominio.Funcionar
 public class FuncionarioTest01 {
     static void main(String[] args) {
         Funcionario funcionario = new Funcionario();
-        funcionario.nome = "Sushi";
-        funcionario.idade = 25;
-        double[] salarios = new double[]{1200, 987.32, 2000};
-        funcionario.salarios = salarios;
-
+        funcionario.setNome("Sushi");
+        funcionario.setIdade( 25);
+        funcionario.setSalarios(new double[]{1200, 987.32, 2000});
         funcionario.imprimir();
+        System.out.println("Média " + funcionario.getMedia());
 
     }
 }
