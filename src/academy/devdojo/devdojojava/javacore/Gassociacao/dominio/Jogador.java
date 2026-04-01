@@ -9,7 +9,6 @@ public class Jogador {
         if (time != null) {
             System.out.println(time.getNome());
         }
-
     }
 
     public Jogador(String nome) {
