@@ -10,7 +10,7 @@ public class AssociacaoTest {
         Local local1 = new Local("Konoha");
         Professor professor = new Professor("Jiraya Sensei", "Jutsu sexy");
         Aluno aluno1 = new Aluno("Naruto Uzumaki", 16);
-        Seminario seminario1 = new Seminario("Seminario de jutsu sexy");
+        Seminario seminario1 = new Seminario("Seminario de jutsu sexy",local1);
         seminario1.setLocal(local1);
         professor.setSeminarios(new Seminario[]{seminario1});
         aluno1.setSeminario(seminario1);
