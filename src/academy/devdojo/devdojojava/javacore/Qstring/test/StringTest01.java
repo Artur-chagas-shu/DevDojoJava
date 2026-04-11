@@ -4,7 +4,7 @@ public class StringTest01 {
     static void main(String[] args) {
         String nome = "Sushi";//String constant pool
         String nome2 = "Sushi";
-        nome = nome.concat(" Shiro");
+        nome = nome.concat(" Shiro");// nome += " Shiro"
         System.out.println(nome);
         System.out.println(nome == nome2);
         String nome3 = new String("Sushi");// 1 variavel de referencia, 2 objeto do tipo string, 3 uma string no pool de string
