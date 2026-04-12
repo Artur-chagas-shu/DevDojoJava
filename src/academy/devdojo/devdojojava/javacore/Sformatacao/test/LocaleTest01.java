@@ -1,4 +1,4 @@
-package academy.devdojo.devdojojava.javacore.Rdatas.test;
+package academy.devdojo.devdojojava.javacore.Sformatacao.test;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -30,6 +30,6 @@ public class LocaleTest01 {
 
         System.out.println(localeItaly.getDisplayCountry(localeJapao));
         System.out.println(localeCH.getDisplayCountry(localeJapao));
-        System.out.println(localeCH.getDisplayCountry(localeHolanda));
+        System.out.println(localeCH.getDisplayLanguage(localeJapao));
     }
 }
