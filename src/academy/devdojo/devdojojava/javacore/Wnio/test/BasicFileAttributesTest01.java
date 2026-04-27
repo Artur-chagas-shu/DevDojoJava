@@ -13,7 +13,7 @@ import java.time.ZoneOffset;
 
 public class BasicFileAttributesTest01 {
     static void main(String[] args) throws IOException {
-        //BasicFileAttributes,DosFileAttibutes, PosixFileAttributes
+        //BasicFileAttributesView,DosFileAttibutesView, PosixFileAttributesView
         LocalDateTime date = LocalDateTime.now().minusDays(10);
         File file = new File("folder2/novo.txt");
         boolean isCreated = file.createNewFile();
@@ -26,5 +26,7 @@ public class BasicFileAttributesTest01 {
         System.out.println(Files.isWritable(path));
         System.out.println(Files.isReadable(path));
         System.out.println(Files.isExecutable(path));
+
+
     }
 }
