@@ -1,6 +1,7 @@
 package academy.devdojo.devdojojava.javacore.Xserializacao.test;
 
 import academy.devdojo.devdojojava.javacore.Xserializacao.dominio.Aluno;
+import academy.devdojo.devdojojava.javacore.Xserializacao.dominio.Turma;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -11,8 +12,10 @@ import java.nio.file.Paths;
 
 public class SerializacaoTest01 {
     static void main(String[] args) {
-        //Aluno aluno = new Aluno(1L, "Sushi", "123456");
-        //serializar(aluno);
+        Aluno aluno = new Aluno(2L, "Sushi", "123456");
+        Turma turma = new Turma("Maratona java virado no jiraya em breve ricos");
+        aluno.setTurma(turma);
+        serializar(aluno);
         deserializar();
     }
     private static void serializar(Aluno aluno){
