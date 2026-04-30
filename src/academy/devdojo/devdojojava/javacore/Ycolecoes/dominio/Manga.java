@@ -1,15 +1,16 @@
 package academy.devdojo.devdojojava.javacore.Ycolecoes.dominio;
 
+
 import java.util.Objects;
 
-public class Manga {
-    private Long id ;
+public class Manga implements Comparable<Manga> {
+    private Long id;
     private String nome;
     private double preco;
 
     public Manga(Long id, String nome, double preco) {
-        Objects.requireNonNull(id,"Id não pode ser null");
-        Objects.requireNonNull(nome,"Nome não pode ser null");
+        Objects.requireNonNull(id, "Id não pode ser null");
+        Objects.requireNonNull(nome, "Nome não pode ser null");
         this.id = id;
         this.nome = nome;
         this.preco = preco;
@@ -42,5 +43,33 @@ public class Manga {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    @Override
+    public int compareTo(Manga outroManga) {
+        // negativo se o this < outroManga
+        //se this == outroManga, return 0
+        // positivo se this > outroManga
+        return this.nome.compareTo(outroManga.getNome());
+        //return Double.compare(this.preco, outroManga.getPreco());
+        //return Double.valueOf(this.preco).compareTo(outroManga.getPreco());
+      //  return this.id.compareTo(outroManga.getId());
+
     }
 }
