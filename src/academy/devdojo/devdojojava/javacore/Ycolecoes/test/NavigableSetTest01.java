@@ -19,6 +19,8 @@ public class NavigableSetTest01 {
         Smartphone smartphone = new Smartphone("123", "Nokia");
         set.add(smartphone);
 
+        NavigableSet<Manga>mangas = new TreeSet<>(new MangaByIdComparator());
+
         mangas.add(new Manga(5L, "Hellsing Ultimate", 19.9, 0));
         mangas.add(new Manga(1L, "Berserk", 9.5, 5));
         mangas.add(new Manga(4L, "Pokemon", 3.2, 0));
