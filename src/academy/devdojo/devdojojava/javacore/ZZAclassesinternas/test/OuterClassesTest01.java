@@ -4,8 +4,8 @@ public class OuterClassesTest01 {
     private String name = "Monkey D. Luffy";
 
 
-    class Inner{
-        public void printOuterClassAttibute(){
+    class Inner {
+        public void printOuterClassAttibute() {
             System.out.println(name);
             System.out.println(this);
             System.out.println(OuterClassesTest01.this);
