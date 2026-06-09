@@ -17,6 +17,6 @@ public class OuterClassesTest02 {
 
     static void main(String[] args) {
             OuterClassesTest02 outer = new OuterClassesTest02();
-            outer.print();
+            outer.print("");
     }
 }
