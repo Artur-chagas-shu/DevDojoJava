@@ -11,6 +11,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import static academy.devdojo.devdojojava.javacore.ZZEstreams.dominio.Promotion.*;
+import static java.util.stream.Collectors.*;
+
 public class StreamTest13 {
 
     private static List<LightNovel> lightNovels = new ArrayList<>( List.of(
@@ -26,14 +29,14 @@ public class StreamTest13 {
 
     static void main(String[] args) {
         Map<Promotion, List<LightNovel>> collect = lightNovels.stream()
-                .collect(Collectors.groupingBy(ln ->
-                        ln.getPrice() < 6 ? Promotion.UNDER_PROMOTION : Promotion.NORMAL_PRICE
+                .collect(groupingBy(ln ->
+                        ln.getPrice() < 6 ? UNDER_PROMOTION : NORMAL_PRICE
                 ));
         System.out.println(collect);
 
 
-        Map<Category, Map<Promotion, List<LightNovel>>> collect1 = lightNovels.stream().collect(Collectors.groupingBy(LightNovel::getCategory, Collectors.groupingBy(ln ->
-                ln.getPrice() < 6 ? Promotion.UNDER_PROMOTION : Promotion.NORMAL_PRICE
+        Map<Category, Map<Promotion, List<LightNovel>>> collect1 = lightNovels.stream().collect(groupingBy(LightNovel::getCategory, groupingBy(ln ->
+                ln.getPrice() < 6 ? UNDER_PROMOTION : NORMAL_PRICE
         )));
 
         System.out.println(collect1);
