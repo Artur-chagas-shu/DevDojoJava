@@ -1,6 +1,5 @@
-package academy.devdojo.devdojojava.javacore.ZZFthreads.ZZGconcorrencia.test;
+package academy.devdojo.devdojojava.javacore.ZZGconcorrencia.test;
 
-import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 class Worker implements Runnable {

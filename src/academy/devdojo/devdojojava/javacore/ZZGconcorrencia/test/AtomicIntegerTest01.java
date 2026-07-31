@@ -1,6 +1,5 @@
-package academy.devdojo.devdojojava.javacore.ZZFthreads.ZZGconcorrencia.test;
+package academy.devdojo.devdojojava.javacore.ZZGconcorrencia.test;
 
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
